@@ -1,0 +1,155 @@
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------  */
+
+
+@media only screen and (max-width: 991px){
+
+    header nav {
+        padding-top: 15px;
+    }
+    header nav .nav-links{
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        text-align: center;
+        transition: .5s all;
+    }
+
+    header nav .nav-links li{
+        display: block;
+        padding: 10px 0px;
+    }
+
+    header nav .bar-wrapper{
+       display: block;
+    }
+
+    #check:checked ~ .nav-links{
+        right: 0;
+    }
+
+    #service .child-wrapper{
+        flex-direction: column;
+    }
+
+    #service .child-wrapper .child{
+        margin-bottom: 30px;
+    }
+
+            
+    #portfolio .card-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about-us .about-child-wrapper .about-child{
+        width: 100%;
+    }
+
+}
+
+
+/* 
+Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+*/
+
+
+@media only screen and (max-width: 767px) {
+	
+    header nav {
+        padding-top: 18px;
+    }
+
+    header .header-text{
+        
+        padding: 70px 0px 50px;
+    }
+
+    header .header-text h2{
+        font-size: 25px;
+     }
+
+     header .header-text h1{
+        font-size: 35px;
+     }
+
+     header .header-text a{
+        padding: 15px 25px;
+     }
+
+    #portfolio .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+
+    #team .team-profile{
+    flex-direction: column;
+    }
+
+    #team .team-profile .profile{
+    margin-bottom: 40px;
+    }
+
+    #logos .logos-wrapper img{
+        flex-basis: 20%;
+    }
+
+    #contact form .form-wrapper{
+        flex-direction: column;
+    }
+
+    #contact form .form-wrapper .form-right textarea{
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;   
+    }
+
+        
+    footer .container{ 
+        flex-direction: column;
+    }
+
+    footer .footer-icon ul{
+        margin-top: 20px;
+    }
+
+    #about-us .about-child-wrapper .about-child{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #about-us .about-child-wrapper .about-child .child-text{
+        padding: 0rem 0rem;
+    }
+
+    #about-us .about-child-wrapper .about-child .child-text h3{
+       text-align: center;
+    }
+
+    #about-us .about-child-wrapper .about-child .child-text p{
+        text-align: center;
+    }
+
+    #about-us .about-child-wrapper .about-child:nth-child(odd) img{
+        order: 0;
+     }
+
+        
+    #about-us .about-child-wrapper .about-child{
+        padding: 40px 0px;
+    }
+        
+    #about-us .about-child-wrapper .about-child img{
+        margin-bottom: 15px;
+    }
+
+}
